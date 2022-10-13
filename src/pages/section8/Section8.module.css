@@ -1,0 +1,318 @@
+.container {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 5%,
+            rgba(245, 246, 252, 0),
+            rgba(26, 26, 26, 0.5),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 1) 100%
+        ),
+        url("./../../images/bg5Nn.png");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 2vh 0; */
+    /* border: 1px solid wheat; */
+    margin-top: -20vh;
+}
+.heading {
+    font-size: 40px;
+    font-family: "Tomorrow", sans-serif;
+
+    font-weight: 600;
+    /* background: -webkit-linear-gradient(#ffffff, #0093ba, #0093ba, #00005f); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    text-align: center;
+    /* margin: 2vh; */
+    /* padding-bottom: 5vh; */
+    line-height: 1.5;
+    /* border: 1px solid green; */
+    /* color: #0093ba; */
+    color: white;
+    padding: 0 5vw;
+    /* width: 100%; */
+}
+.innerContainer {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100vh;
+}
+/* //////////////////////////// */
+.inputContainer {
+    padding: 3vh 0;
+    /* border: 1px solid white; */
+}
+.emailWrap {
+    border: 0.5px solid rgba(37, 153, 219, 0.75);
+    display: flex;
+    width: 25.6vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 3vh; */
+    border-radius: 4px;
+}
+.emailWrap :hover {
+    box-shadow: 0px 1px 10px 0px rgba(37, 153, 219, 0.75);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(37, 153, 219, 0.75);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(37, 153, 219, 0.75);
+}
+.emailWrap input {
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    width: 80%;
+    height: 100%;
+    padding-left: 1vw;
+    outline: none;
+}
+
+.subscribeHeading {
+    color: #0093cb;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    /* margin-bottom: 1vh; */
+    text-align: center;
+    /* margin: 5vh 0; */
+    margin-bottom: 1vh;
+}
+.subscribeHeading {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.emailWrap button {
+    color: #07122c;
+    border-left: 1px solid #07122c;
+    width: 28%;
+    color: #ffffff;
+    background-color: #07122c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Tomorrow", sans-serif;
+    padding: 0 20px;
+    border: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.emailWrap button:hover {
+    cursor: pointer;
+    box-shadow: #6f78ca;
+}
+
+.emailWrap2 {
+    border: 1px solid #07122c;
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    border-radius: 10px;
+}
+/* ////////////////////////////// */
+.socialWrap {
+    /* border: 1px solid white; */
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+.socialWrap img {
+    width: 45px;
+    height: 45px;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.4s all;
+}
+.socialWrap img:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    /* border: 1px solid #00deee; */
+
+    /* border-radius: 20%;
+    padding: 10px;
+    background: #b71c1c;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; */
+}
+.emailSubscribe {
+    width: 400px;
+    border: 2px solid #ffff;
+    border-radius: 4px;
+    height: 30px;
+    display: flex;
+}
+.emailSubscribe input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 0 15px;
+}
+.emailSubscribe button {
+    color: #ffffff;
+    font-weight: bold;
+    background: #6f78ca;
+    font-size: 13px;
+}
+
+@media (max-width: 1450px) {
+    .emailWrap {
+        width: 28vw;
+    }
+    .emailWrap div {
+        font-size: 15px;
+    }
+    .container {
+        /* height: 100vh; */
+    }
+}
+@media (max-width: 1400px) {
+    .heading {
+        font-size: 40px;
+        margin: 5vh;
+    }
+    .emailWrap {
+        width: 26vw;
+    }
+    .emailWrap div {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1300px) {
+    .emailWrap {
+        width: 27vw;
+    }
+}
+@media (max-width: 1100px) {
+    .heading {
+        font-size: 30px;
+        margin: 5vh;
+    }
+    .emailWrap {
+        width: 40vw;
+    }
+    .emailWrap div {
+        font-size: 14px;
+    }
+    .container {
+        /* height: 60vh; */
+        /* margin-top: -20vh; */
+    }
+}
+@media (max-width: 850px) {
+    .heading {
+        font-size: 20px;
+        margin: 5vh;
+    }
+    .socialWrap {
+        width: 60vw;
+    }
+    .emailWrap {
+        width: 60vw;
+    }
+}
+@media (max-width: 650px) {
+    .heading {
+        width: 85%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 550px) {
+    .socialWrap {
+        width: 80vw;
+    }
+    .emailWrap {
+        width: 80vw;
+    }
+    .heading {
+        /* border: 1px solid red; */
+        margin-bottom: 0;
+    }
+    /* .socialWrap{
+        border: 1px solid red;
+    } */
+}
+
+@media (max-width: 450px) {
+    .container {
+        margin-top: -25vh;
+        /* height: 110vh; */
+        /* padding-bottom: 35vh; */
+        /* margin-top: -20vh; */
+    }
+    .heading {
+        font-size: 14px;
+        margin: 5vh;
+        margin-bottom: 0vh;
+        /* border: 1px solid red; */
+        /* width: 100%; */
+        line-height: 1.5;
+        /* border: 1px solid green; */
+    }
+    .socialWrap {
+        width: 80vw;
+    }
+    .emailWrap {
+        width: 80vw;
+        height: 6vh;
+    }
+
+    .socialWrap img {
+        width: 30px;
+        height: 30px;
+    }
+    .subscribeHeading {
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .heading {
+        font-size: 13px;
+        margin: 5vh;
+        margin-bottom: 0vh;
+    }
+}
+@media (max-width: 380px) {
+    .heading {
+        font-size: 12px;
+        margin: 5vh;
+        margin-bottom: 0vh;
+    }
+    .container {
+        margin-top: -30vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .heading {
+        font-size: 11px;
+    }
+    .subscribeHeading {
+        font-size: 16px;
+    }
+}

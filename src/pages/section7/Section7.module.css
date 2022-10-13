@@ -1,0 +1,160 @@
+.container {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 5%,
+            rgba(245, 246, 252, 0),
+            rgba(26, 26, 26, 0.5),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 1) 100%
+        ),
+        url("../../images/Group53.png");
+    /* background-image: url("../../images/Group53.png"); */
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vh;
+    /* padding-top: 10vh; */
+
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border: 1px solid white; */
+}
+
+.black {
+    height: 5vh;
+}
+.para {
+    color: #adadad;
+    font-weight: 400;
+    font-family: "Tomorrow", sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    padding: 0 10%;
+    line-height: 1.5;
+    margin-top: 20%;
+}
+.heading {
+    text-align: center;
+    font-family: "Tomorrow", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    /* background: -webkit-linear-gradient(#ffffff, #ffffff, #ffffff, #0093ba, #0093ba, #00005f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    margin-top: 5%;
+    color: #0093ba;
+}
+
+@media (max-width: 1440px) {
+    .para {
+        font-size: 22px;
+    }
+    .heading {
+        font-size: 36px;
+        margin: 0 5vw;
+        margin-top: 5%;
+    }
+}
+@media (max-width: 1400px) {
+    .para {
+        font-size: 20px;
+    }
+    .heading {
+        font-size: 32px;
+    }
+    .container {
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .para {
+        font-size: 16px;
+        margin-top: 25%;
+    }
+    .heading {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 800px) {
+    .container {
+        height: auto;
+        width: 100%;
+        background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 5%,
+                rgba(245, 246, 252, 0),
+                rgba(26, 26, 26, 0.5),
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 1) 100%
+            ),
+            url("./../../images/blueBgLarge.png");
+        padding-bottom: 1vh;
+        /* padding-top: 20vh; */
+    }
+    .para {
+        margin-top: 15%;
+    }
+    .heading {
+        /* margin-bottom: 5%; */
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+@media (max-width: 450px) {
+    .para {
+        font-size: 14px;
+        padding-top: 15px;
+        font-weight: 600;
+    }
+    .heading {
+        font-size: 14px;
+        margin-top: 5%;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+    .container {
+        /* margin-top: -15%; */
+        /* padding-top: 15vh; */
+        /* height: 70vh; */
+        padding-bottom: 0vh;
+        margin-top: -20vh;
+        padding-top: 5vh;
+    }
+}
+@media (max-width: 400px) {
+    .para {
+        /* font-size: 13px; */
+        margin-top: 30%;
+    }
+    .heading {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .container {
+        /* padding-bottom: 10vh; */
+        padding-top: 2vh;
+        margin-top: -25vh;
+    }
+}
+@media (max-width: 380px) {
+    .para {
+        font-size: 13px;
+        margin-top: 30%;
+    }
+    .heading {
+        font-size: 14px;
+    }
+}

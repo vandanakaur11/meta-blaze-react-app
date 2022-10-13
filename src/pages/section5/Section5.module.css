@@ -1,0 +1,275 @@
+/* .container {
+    background-image: url("./../../images/bg11.png");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading {
+    color: #adadad;
+    font-size: 40px;
+    font-family: "Tomorrow", sans-serif;
+    text-align: center;
+} */
+.container {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 5%,
+            rgba(245, 246, 252, 0),
+            rgba(26, 26, 26, 0.5),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 1) 100%
+        ),
+        url("./../../images/bg2.png");
+    width: 100%;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    height: auto;
+    object-fit: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10vh 0 0 0;
+    /* border: 1px solid white; */
+}
+
+.cardWrap {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 7vh;
+}
+.nftWrap {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nftWrap img {
+    box-shadow: rgba(255, 255, 255, 1) 0px 3px 9px 1px;
+    width: 18vw;
+}
+.nftText {
+    color: #a3a7a8;
+    font-weight: 400;
+    font-family: "Tomorrow", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin: 1vh;
+    text-shadow: 0px 1px #0000e7;
+}
+.heading {
+    color: #adadad;
+    font-weight: 600;
+    font-family: "Tomorrow", sans-serif;
+    font-size: 45px;
+    /* background: -webkit-linear-gradient(#ffffff, #ffffff, #0093ba, #00005f); */
+    /* border: 1px solid green; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    text-align: center;
+    color: #0093ba;
+}
+.subheading {
+    color: #adadad;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Tomorrow", sans-serif;
+    text-align: center;
+    margin-top: 0vh;
+    margin-top: 3vh;
+}
+.para {
+    color: #adadad;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Tomorrow", sans-serif;
+    text-align: center;
+    margin-top: 10vh;
+}
+.nftWrap img:hover {
+    box-shadow: rgba(0, 222, 238, 0.9) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+.metacont {
+    background-color: #080808;
+    width: 50vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: rgba(60, 60, 60, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 2px solid #0093BA;
+    padding: 3vh;
+}
+.metacont:hover{
+    box-shadow: rgba(0, 222, 238, 0.9) 0px 0px 15px 0px;
+    cursor: pointer;
+
+ }
+ 
+
+@media (max-width: 1300px) {
+    .cardWrap {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+    .nftWrap {
+        margin-top: 5vh;
+    }
+    .nftWrap img {
+        width: 30vw;
+    }
+    .container {
+        height: auto;
+
+        padding-top: 2vh;
+    }
+}
+@media (max-width: 1100px) {
+    .heading {
+        font-size: 35px;
+        /* margin-top: 8vh; */
+    }
+    .subheading {
+        font-size: 19px;
+    }
+    .para {
+        font-size: 21px;
+        margin-bottom: 20vh;
+    }
+    .container {
+        height: auto;
+        padding-bottom: 10vh;
+        margin-bottom: -5vh;
+    }
+    .cardWrap {
+    }
+    .nftWrap img {
+        width: 35vw;
+    }
+}
+@media (max-width: 800px) {
+    .cardWrap {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+    .nftWrap {
+        margin-top: 5vh;
+    }
+    .container {
+        /* height: 150vh; */
+        height: auto;
+        width: 100%;
+        padding-bottom: 15vh;
+        margin-bottom: -10vh;
+    }
+    .heading {
+        /* margin-top: 5vh; */
+    }
+    .nftWrap img {
+        width: 35vw;
+    }
+    .metacont {
+        width: 80vw;
+    }
+}
+@media (max-width: 550px) {
+    .cardWrap {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+    .container {
+        /* height: 290vh; */
+        margin-bottom: -14vh;
+    }
+    .heading {
+        font-size: 20px !important;
+        /* padding-top: 5vh; */
+        font-weight: 700;
+    }
+    .subheading {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    .para {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nftWrap img {
+        width: 70vw;
+    }
+    .metacont {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 0vh 0 -2vh 0;
+        padding-bottom: 5vh;
+        padding-top: 6vh;
+    }
+    .heading {
+        /* margin-top: -30px; */
+        /* background: -webkit-linear-gradient(#ffffff, #ffffff, #0093ba, #0093ba); */
+        /* -webkit-background-clip: text; */
+        /* -webkit-text-fill-color: transparent; */
+        color: #adadad;
+        font-size: 18px !important;
+        color: #0093ba;
+    }
+    .cardWrap {
+        margin-top: -10px;
+        padding-bottom: 130px;
+    }
+    .nftWrap {
+        margin-bottom: -28px;
+        margin-top: 10vh;
+    }
+    .nftWrap img {
+        width: 70vw;
+    }
+    .para {
+        padding: 40px 0 0 0;
+    }
+    .nftText {
+        margin-top: 2vh;
+    }
+    .metacont{
+        width: 80%;
+        padding: 2vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 20px;
+        /* margin-bottom: -3vh; */
+        padding-top: 0px;
+    }
+    .subheading {
+        font-size: 12px;
+    }
+    .para {
+        font-size: 12px;
+        margin-top: 1vh!important;
+        line-height: 1.7;
+    }
+    .container {
+        /* height: 290vh; */
+        padding-bottom: -5vh;
+    }
+}

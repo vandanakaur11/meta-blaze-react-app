@@ -1,0 +1,26 @@
+.container {
+}
+
+.large img {
+    width: 100%;
+}
+
+.small {
+    display: none;
+}
+
+@media (max-width: 550px) {
+    .large {
+        display: none;
+    }
+    .small {
+        display: flex;
+        flex-direction: column;
+    }
+    .small img {
+        width: 100%;
+    }
+    .container {
+        display: none;
+    }
+}
